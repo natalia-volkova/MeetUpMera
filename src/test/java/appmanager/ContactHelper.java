@@ -95,7 +95,7 @@ public class ContactHelper extends HelperBase {
     return wd.findElements(By.xpath("//span[contains(@class, 'mail-AbookEntry-Contact')]")).size();
   }
 
-  public void create(ContactData contact, boolean creation) throws InterruptedException {
+  public void create(ContactData contact) throws InterruptedException {
     initCreation();
     fillContactForm(contact, creation);
     submitContactCreation();
