@@ -1,0 +1,6 @@
+2017-12-14 17:34:11,993 INFO main test.TestBase - Start test: testContactCreation
+2017-12-14 17:34:17,543 INFO main test.TestBase - Stop test: testContactCreation
+2017-12-14 17:34:17,544 INFO main test.TestBase - Start test: testContactCreation
+2017-12-14 17:34:18,897 INFO main test.TestBase - Stop test: testContactCreation
+2017-12-14 17:34:18,899 INFO main test.TestBase - Start test: testContactCreation
+2017-12-14 17:34:21,639 INFO main test.TestBase - Stop test: testContactCreation

@@ -1,0 +1,47 @@
+apply plugin: 'java'
+
+
+repositories{
+
+    mavenCentral()
+}
+
+configurations {
+    agent
+}
+
+dependencies {
+
+    compile 'org.testng:testng:6.11'
+    compile 'org.seleniumhq.selenium:selenium-server:3.8.1'
+    compile 'org.hamcrest:java-hamcrest:2.0.0.0'
+    compile 'com.beust:jcommander:1.72'
+    compile 'com.thoughtworks.xstream:xstream:1.4.10'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'ch.qos.logback:logback-classic:1.1.5'
+    compile 'io.qameta.allure:allure-testng:2.0-BETA21'
+    agent "org.aspectj:aspectjweaver:1.8.10"
+
+}
+test {
+    useTestNG() {
+        suites 'src/test/resources/testing.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
+
+
+    test.doFirst {
+        jvmArgs "-javaagent:${configurations.agent.singleFile}"
+    }
+
+    test {
+        useTestNG()
+        systemProperty 'allure.results.directory', 'build/allure-results'
+    }
+
+
+
+
