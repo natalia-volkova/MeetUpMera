@@ -71,11 +71,12 @@ public class ContactCreationTests extends TestBase {
   @Test(dataProvider = "validContactsJson")
   public void testContactCreation(ContactData contact) throws InterruptedException {
 
+
     app.goTo().contactsPage();
     int sizeBefore = app.contact().count();
     app.contact().create(contact);
     assertThat(app.contact().count(), equalTo(sizeBefore+1));
-
+    System.out.println("Contact created: "+contact);
     assertThat(app.contact().getContactInfoFromEditForm(contact), equalTo(contact));
 
   }

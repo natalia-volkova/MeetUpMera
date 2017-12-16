@@ -90,6 +90,8 @@ public class ContactData {
     return lastName;
   }
 
+
+
   public String getFirstName() {
     return firstName;
   }
@@ -116,8 +118,38 @@ public class ContactData {
 
   public int getId() {    return id;  }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
 
+    ContactData that = (ContactData) o;
 
+    if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+    if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
+    if (middleName != null ? !middleName.equals(that.middleName) : that.middleName != null) return false;
+    if (phone != null ? !phone.equals(that.phone) : that.phone != null) return false;
+    return eMail != null ? eMail.equals(that.eMail) : that.eMail == null;
+  }
 
+  @Override
+  public int hashCode() {
+    int result = lastName != null ? lastName.hashCode() : 0;
+    result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+    result = 31 * result + (middleName != null ? middleName.hashCode() : 0);
+    result = 31 * result + (phone != null ? phone.hashCode() : 0);
+    result = 31 * result + (eMail != null ? eMail.hashCode() : 0);
+    return result;
+  }
 
+  @Override
+  public String toString() {
+    return "ContactData{" +
+            "lastName='" + lastName + '\'' +
+            ", firstName='" + firstName + '\'' +
+            ", middleName='" + middleName + '\'' +
+            ", phone='" + phone + '\'' +
+            ", eMail='" + eMail + '\'' +
+            '}';
+  }
 }

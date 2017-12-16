@@ -1,17 +1,16 @@
 package appmanager;
 
 import model.ContactData;
-import model.Contacts;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.stream.Collectors;
+
 
 public class ContactHelper extends HelperBase {
 
@@ -23,7 +22,7 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("//form//button[contains(@class, 'save')]"));
   }
 
-  public void fillContactForm(ContactData contactData, boolean creation) {
+  public void fillContactForm(ContactData contactData) {
     type(By.name("first_name"), contactData.getFirstName());
     type(By.name("middle_name"), contactData.getMiddleName());
     type(By.name("last_name"), contactData.getLastName());
@@ -97,10 +96,20 @@ public class ContactHelper extends HelperBase {
 
   public void create(ContactData contact) throws InterruptedException {
     initCreation();
-    fillContactForm(contact, creation);
+    fillContactForm(contact);
     submitContactCreation();
     Thread.sleep(5);
     refreshPage();
+    Thread.sleep(5);
+    waitForAngularReady();
+  }
+
+  private void waitForAngularReady() {
+
+
+          ((JavascriptExecutor) wd)
+                  .executeAsyncScript("var arg = arguments[arguments.length-1]; var arg1 = window.setInterval(function() { if (document.readyState == 'complete') { clearInterval(arg1); arg(); } }, 50);");
+
   }
 
   public ContactData getContactInfoFromEditForm(ContactData contactEdited){
@@ -108,6 +117,7 @@ public class ContactHelper extends HelperBase {
     clickContactByEmail(contactEdited.geteMail());
     ContactData contact = infoFromEditForm();
     closeEditForm();
+    System.out.println(contact);
     return contact;
   }
 
@@ -153,15 +163,25 @@ public class ContactHelper extends HelperBase {
 
 
 
-  public String mergeNames(ContactData contact) {
-    return Arrays.asList(contact.getFirstName(),contact.getMiddleName(), contact.getLastName())
-            .stream().filter((s) -> !s.equals(""))
-            .collect(Collectors.joining(" "));
+
+
+  public void delete() {
+
+    selectFirstContact();
+    deleteSelected();
 
   }
 
+  private void deleteSelected() {
+    WebElement deleteButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@class, 'remove')]")));
+    deleteButton.click();
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class, 'mail-Notification-Content')]")));
+  }
 
+  private void selectFirstContact() {
+    wd.findElement(By.cssSelector("div[class*='js-entries-container'])")).findElement(By.xpath(".//span[contains(@class, 'mail-AbookEntry-Checkbox')]")).click();
 
+  }
 
 
 }
