@@ -1,0 +1,41 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "ContactCreationTests",
+      "children" : [ {
+        "name" : "testContactCreation",
+        "uid" : "74c1c6b60b2db68a",
+        "parentUid" : "9ae1ede19b836be15dd40786f00d8238",
+        "status" : "failed",
+        "time" : {
+          "start" : 1513605899116,
+          "stop" : 1513605913317,
+          "duration" : 14201
+        },
+        "flaky" : true,
+        "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
+      } ],
+      "uid" : "9ae1ede19b836be15dd40786f00d8238"
+    }, {
+      "name" : "ContactDeletionTests",
+      "children" : [ {
+        "name" : "testContactDelete",
+        "uid" : "30b886b6c639ca66",
+        "parentUid" : "7135822697503e439fd6179ede49ca26",
+        "status" : "failed",
+        "time" : {
+          "start" : 1513606188184,
+          "stop" : 1513606189637,
+          "duration" : 1453
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7135822697503e439fd6179ede49ca26"
+    } ],
+    "uid" : "d662795e8d349f9b5595bf62f43ea7ae"
+  } ]
+}

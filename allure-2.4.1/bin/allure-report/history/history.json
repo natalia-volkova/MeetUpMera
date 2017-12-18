@@ -1,0 +1,42 @@
+{
+  "b236329c5930f71385f696b0bb53d046" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "30b886b6c639ca66",
+      "status" : "failed",
+      "statusDetails" : "\nExpected: <0>\n     but: was <1>",
+      "time" : {
+        "start" : 1513606188184,
+        "stop" : 1513606189637,
+        "duration" : 1453
+      }
+    } ]
+  },
+  "cbf8b52713a30c3da04eaafea2878007" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "74c1c6b60b2db68a",
+      "status" : "failed",
+      "statusDetails" : "\nExpected: <ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}>\n     but: was <ContactData{lastName='', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}>",
+      "time" : {
+        "start" : 1513605899116,
+        "stop" : 1513605913317,
+        "duration" : 14201
+      }
+    } ]
+  }
+}

@@ -23,6 +23,7 @@ dependencies {
     agent "org.aspectj:aspectjweaver:1.8.10"
 
 }
+
 test {
     useTestNG() {
         suites 'src/test/resources/testing.xml'
@@ -34,13 +35,23 @@ test {
 
 
     test.doFirst {
-        jvmArgs "-javaagent:${configurations.agent.singleFile}"
-    }
+        jvmArgs "-javaagent:${configurations.agent.singleFile}" }
 
     test {
         useTestNG()
         systemProperty 'allure.results.directory', 'build/allure-results'
     }
+
+task generateAllure(type: Exec) {
+    workingDir "$projectDir/allure-2.4.1/bin"
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine 'cmd', '/c', 'allure.bat', 'generate', '-c', '../../allure-results'
+    } else {
+        commandLine 'bash', '-c', 'allure', 'generate', '-c',"$projectDir/build/allure-results"
+    }
+}
+
+tasks.withType(Test)*.finalizedBy generateAllure
 
 
 

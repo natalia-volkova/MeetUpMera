@@ -1,0 +1,29 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "testContactCreation",
+    "uid" : "74c1c6b60b2db68a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1513605899116,
+      "stop" : 1513605913317,
+      "duration" : 14201
+    },
+    "flaky" : true,
+    "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
+  }, {
+    "name" : "testContactDelete",
+    "uid" : "30b886b6c639ca66",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1513606188184,
+      "stop" : 1513606189637,
+      "duration" : 1453
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

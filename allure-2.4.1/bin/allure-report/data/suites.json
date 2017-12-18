@@ -1,0 +1,45 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Default Suite",
+    "children" : [ {
+      "name" : "MeetUp",
+      "children" : [ {
+        "name" : "test.ContactCreationTests",
+        "children" : [ {
+          "name" : "testContactCreation",
+          "uid" : "74c1c6b60b2db68a",
+          "parentUid" : "82301da5f4d61ace02e9f9f516d733e8",
+          "status" : "failed",
+          "time" : {
+            "start" : 1513605899116,
+            "stop" : 1513605913317,
+            "duration" : 14201
+          },
+          "flaky" : true,
+          "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
+        } ],
+        "uid" : "82301da5f4d61ace02e9f9f516d733e8"
+      }, {
+        "name" : "test.ContactDeletionTests",
+        "children" : [ {
+          "name" : "testContactDelete",
+          "uid" : "30b886b6c639ca66",
+          "parentUid" : "0bc72dff81993f140c8104776a455cca",
+          "status" : "failed",
+          "time" : {
+            "start" : 1513606188184,
+            "stop" : 1513606189637,
+            "duration" : 1453
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0bc72dff81993f140c8104776a455cca"
+      } ],
+      "uid" : "87e7aa1da4d71b7284c4a80bd5f3d119"
+    } ],
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e"
+  } ]
+}

@@ -1,0 +1,41 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "\nExpected: <ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}>\n     but: was <ContactData{lastName='', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}>",
+      "children" : [ {
+        "name" : "testContactCreation",
+        "uid" : "74c1c6b60b2db68a",
+        "parentUid" : "b2cae7b7ffd6a575a118846f21a6551e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1513605899116,
+          "stop" : 1513605913317,
+          "duration" : 14201
+        },
+        "flaky" : true,
+        "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
+      } ],
+      "uid" : "b2cae7b7ffd6a575a118846f21a6551e"
+    }, {
+      "name" : "\nExpected: <0>\n     but: was <1>",
+      "children" : [ {
+        "name" : "testContactDelete",
+        "uid" : "30b886b6c639ca66",
+        "parentUid" : "f9b98d4fe499029d2d19315d15eac226",
+        "status" : "failed",
+        "time" : {
+          "start" : 1513606188184,
+          "stop" : 1513606189637,
+          "duration" : 1453
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f9b98d4fe499029d2d19315d15eac226"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

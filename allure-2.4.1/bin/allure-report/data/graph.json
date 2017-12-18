@@ -1,0 +1,21 @@
+[ {
+  "uid" : "74c1c6b60b2db68a",
+  "name" : "testContactCreation",
+  "time" : {
+    "start" : 1513605899116,
+    "stop" : 1513605913317,
+    "duration" : 14201
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "30b886b6c639ca66",
+  "name" : "testContactDelete",
+  "time" : {
+    "start" : 1513606188184,
+    "stop" : 1513606189637,
+    "duration" : 1453
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]
