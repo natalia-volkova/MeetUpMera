@@ -1,21 +1,31 @@
 [ {
-  "uid" : "74c1c6b60b2db68a",
-  "name" : "testContactCreation",
+  "uid" : "69c1c1398d96d3cc",
+  "name" : "testSameContactCreation",
   "time" : {
-    "start" : 1513605899116,
-    "stop" : 1513605913317,
-    "duration" : 14201
+    "start" : 1513673276784,
+    "stop" : 1513673278084,
+    "duration" : 1300
   },
-  "status" : "failed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "30b886b6c639ca66",
+  "uid" : "7d09f6e3cd1a6fde",
   "name" : "testContactDelete",
   "time" : {
-    "start" : 1513606188184,
-    "stop" : 1513606189637,
-    "duration" : 1453
+    "start" : 1513673304119,
+    "stop" : 1513673306521,
+    "duration" : 2402
   },
-  "status" : "failed",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c367646c7695e54",
+  "name" : "testContactCreation",
+  "time" : {
+    "start" : 1513673264548,
+    "stop" : 1513673276737,
+    "duration" : 12189
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

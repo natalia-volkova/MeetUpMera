@@ -14,9 +14,7 @@ public class HelperBase {
   protected WebDriver wd;
   WebDriverWait wait;
 
-  //public HelperBase(WebDriver wd) {
-  //  this.wd = wd;
-  //}
+
 
   public HelperBase(ApplicationManager app) {
     this.app = app;

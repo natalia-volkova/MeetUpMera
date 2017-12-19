@@ -4,37 +4,49 @@
   "children" : [ {
     "name" : "n103136",
     "children" : [ {
-      "name" : "8132@n103136.main(1)",
+      "name" : "10316@n103136.main(1)",
       "children" : [ {
-        "name" : "testContactCreation",
-        "uid" : "74c1c6b60b2db68a",
-        "parentUid" : "2ada192cc5a307542a3bba52ff0667a1",
-        "status" : "failed",
+        "name" : "testSameContactCreation",
+        "uid" : "69c1c1398d96d3cc",
+        "parentUid" : "5af258221121739fa2ae5c6ee8474086",
+        "status" : "broken",
         "time" : {
-          "start" : 1513605899116,
-          "stop" : 1513605913317,
-          "duration" : 14201
+          "start" : 1513673276784,
+          "stop" : 1513673278084,
+          "duration" : 1300
+        },
+        "flaky" : false,
+        "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
+      }, {
+        "name" : "testContactCreation",
+        "uid" : "5c367646c7695e54",
+        "parentUid" : "5af258221121739fa2ae5c6ee8474086",
+        "status" : "passed",
+        "time" : {
+          "start" : 1513673264548,
+          "stop" : 1513673276737,
+          "duration" : 12189
         },
         "flaky" : true,
         "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
       } ],
-      "uid" : "2ada192cc5a307542a3bba52ff0667a1"
+      "uid" : "5af258221121739fa2ae5c6ee8474086"
     }, {
-      "name" : "14156@n103136.main(1)",
+      "name" : "3756@n103136.main(1)",
       "children" : [ {
         "name" : "testContactDelete",
-        "uid" : "30b886b6c639ca66",
-        "parentUid" : "1a1ae9bc2e4ef3420447e9f790215a51",
-        "status" : "failed",
+        "uid" : "7d09f6e3cd1a6fde",
+        "parentUid" : "c12a42fc7fad00839d1a4ca6fb9ab845",
+        "status" : "passed",
         "time" : {
-          "start" : 1513606188184,
-          "stop" : 1513606189637,
-          "duration" : 1453
+          "start" : 1513673304119,
+          "stop" : 1513673306521,
+          "duration" : 2402
         },
-        "flaky" : false,
+        "flaky" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "1a1ae9bc2e4ef3420447e9f790215a51"
+      "uid" : "c12a42fc7fad00839d1a4ca6fb9ab845"
     } ],
     "uid" : "129ac2670f977f8a7d4fe0e35b295012"
   } ]

@@ -1,0 +1,134 @@
+{
+  "uid" : "3554c4078bb42187",
+  "name" : "testContactDelete",
+  "fullName" : "test.ContactDeletionTests.testContactDelete",
+  "historyId" : "b236329c5930f71385f696b0bb53d046",
+  "time" : {
+    "start" : 1513673178835,
+    "stop" : 1513673181821,
+    "duration" : 2986
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ {
+    "name" : "ensurePreconditions",
+    "time" : {
+      "start" : 1513673167286,
+      "stop" : 1513673178750,
+      "duration" : 11464
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "logTestStart",
+    "time" : {
+      "start" : 1513673166817,
+      "stop" : 1513673166832,
+      "duration" : 15
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1513673158152,
+      "stop" : 1513673166783,
+      "duration" : 8631
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "logTestStop",
+    "time" : {
+      "start" : 1513673181857,
+      "stop" : 1513673181858,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1513673181873,
+      "stop" : 1513673183076,
+      "duration" : 1203
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.ContactDeletionTests"
+  }, {
+    "name" : "testClass",
+    "value" : "test.ContactDeletionTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "testContactDelete"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "MeetUp"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.ContactDeletionTests"
+  }, {
+    "name" : "host",
+    "value" : "n103136"
+  }, {
+    "name" : "thread",
+    "value" : "3724@n103136.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "extra" : {
+    "tags" : [ ]
+  },
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "source" : "3554c4078bb42187.json",
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

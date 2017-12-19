@@ -7,15 +7,27 @@
       "name" : "ContactCreationTests",
       "children" : [ {
         "name" : "testContactCreation",
-        "uid" : "74c1c6b60b2db68a",
+        "uid" : "5c367646c7695e54",
         "parentUid" : "9ae1ede19b836be15dd40786f00d8238",
-        "status" : "failed",
+        "status" : "passed",
         "time" : {
-          "start" : 1513605899116,
-          "stop" : 1513605913317,
-          "duration" : 14201
+          "start" : 1513673264548,
+          "stop" : 1513673276737,
+          "duration" : 12189
         },
         "flaky" : true,
+        "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
+      }, {
+        "name" : "testSameContactCreation",
+        "uid" : "69c1c1398d96d3cc",
+        "parentUid" : "9ae1ede19b836be15dd40786f00d8238",
+        "status" : "broken",
+        "time" : {
+          "start" : 1513673276784,
+          "stop" : 1513673278084,
+          "duration" : 1300
+        },
+        "flaky" : false,
         "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
       } ],
       "uid" : "9ae1ede19b836be15dd40786f00d8238"
@@ -23,15 +35,15 @@
       "name" : "ContactDeletionTests",
       "children" : [ {
         "name" : "testContactDelete",
-        "uid" : "30b886b6c639ca66",
+        "uid" : "7d09f6e3cd1a6fde",
         "parentUid" : "7135822697503e439fd6179ede49ca26",
-        "status" : "failed",
+        "status" : "passed",
         "time" : {
-          "start" : 1513606188184,
-          "stop" : 1513606189637,
-          "duration" : 1453
+          "start" : 1513673304119,
+          "stop" : 1513673306521,
+          "duration" : 2402
         },
-        "flaky" : false,
+        "flaky" : true,
         "parameters" : [ ]
       } ],
       "uid" : "7135822697503e439fd6179ede49ca26"
