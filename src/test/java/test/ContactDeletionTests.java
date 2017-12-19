@@ -14,12 +14,16 @@ public class ContactDeletionTests extends TestBase{
     app.goTo().contactsPage();
     if (app.contact().count()==0) {
 
-      app.contact().create(new ContactData().withFirstName("FirstDeletion").withLastName("LastDeletion").withPhone("111").withEMail("eMail@deletion.com").withBirthday("01.01.2000"));
+      app.contact().create(new ContactData()
+              .withFirstName("FirstDeletion")
+              .withLastName("LastDeletion")
+              .withPhone("111")
+              .withEMail("eMail@deletion.com")
+              .withBirthday("01.01.2000"));
 
     }
   }
 
-    
     @Test
     public void testContactDelete() {
 
@@ -29,7 +33,6 @@ public class ContactDeletionTests extends TestBase{
       assertThat(app.contact().count(), equalTo(sizeBefore-1));
 
   }
-
 
 
 

@@ -5,8 +5,6 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
 import model.ContactData;
-import model.Contacts;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -76,7 +74,18 @@ public class ContactCreationTests extends TestBase {
     int sizeBefore = app.contact().count();
     app.contact().create(contact);
     assertThat(app.contact().count(), equalTo(sizeBefore+1));
-    System.out.println("Contact created: "+contact);
+    assertThat(app.contact().getContactInfoFromEditForm(contact), equalTo(contact));
+
+  }
+
+  @Test(dataProvider = "validContactsJson")
+  public void testSameContactCreation(ContactData contact) throws InterruptedException {
+
+
+    app.goTo().contactsPage();
+    int sizeBefore = app.contact().count();
+    app.contact().create(contact);
+    assertThat(app.contact().count(), equalTo(sizeBefore+1));
     assertThat(app.contact().getContactInfoFromEditForm(contact), equalTo(contact));
 
   }

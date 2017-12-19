@@ -6,20 +6,8 @@
     "children" : [ {
       "name" : "10316@n103136.main(1)",
       "children" : [ {
-        "name" : "testSameContactCreation",
-        "uid" : "69c1c1398d96d3cc",
-        "parentUid" : "5af258221121739fa2ae5c6ee8474086",
-        "status" : "broken",
-        "time" : {
-          "start" : 1513673276784,
-          "stop" : 1513673278084,
-          "duration" : 1300
-        },
-        "flaky" : false,
-        "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
-      }, {
         "name" : "testContactCreation",
-        "uid" : "5c367646c7695e54",
+        "uid" : "1f219478553621d5",
         "parentUid" : "5af258221121739fa2ae5c6ee8474086",
         "status" : "passed",
         "time" : {
@@ -29,24 +17,36 @@
         },
         "flaky" : true,
         "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
+      }, {
+        "name" : "testSameContactCreation",
+        "uid" : "d604af8d6c4bca4c",
+        "parentUid" : "5af258221121739fa2ae5c6ee8474086",
+        "status" : "broken",
+        "time" : {
+          "start" : 1513673276784,
+          "stop" : 1513673278084,
+          "duration" : 1300
+        },
+        "flaky" : false,
+        "parameters" : [ "ContactData{lastName='Last 1', firstName='First 1', middleName='', phone='1111', eMail='email1@testmail.com'}" ]
       } ],
       "uid" : "5af258221121739fa2ae5c6ee8474086"
     }, {
-      "name" : "3756@n103136.main(1)",
+      "name" : "6224@n103136.main(1)",
       "children" : [ {
         "name" : "testContactDelete",
-        "uid" : "7d09f6e3cd1a6fde",
-        "parentUid" : "c12a42fc7fad00839d1a4ca6fb9ab845",
+        "uid" : "1a4f0bf3d492379d",
+        "parentUid" : "b3d71f126065cc13d92627ea0c21db39",
         "status" : "passed",
         "time" : {
-          "start" : 1513673304119,
-          "stop" : 1513673306521,
-          "duration" : 2402
+          "start" : 1513680434115,
+          "stop" : 1513680436994,
+          "duration" : 2879
         },
         "flaky" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "c12a42fc7fad00839d1a4ca6fb9ab845"
+      "uid" : "b3d71f126065cc13d92627ea0c21db39"
     } ],
     "uid" : "129ac2670f977f8a7d4fe0e35b295012"
   } ]
